@@ -4,6 +4,11 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+      <None Update="appsettings.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+
+
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="*"/>
     <PackageReference Include="Serilog.Extensions.Hosting" Version="*"/>
     <PackageReference Include="Serilog.Sinks.Console" Version="*"/>
